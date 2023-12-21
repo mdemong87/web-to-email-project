@@ -41,44 +41,18 @@ a {
 
 /* join-community componnent */
 .joinCommunity {
-  /* background-image: linear-gradient(to right, #183443f2, #1834439a), url("../public/joinCommunity.webp"); */
   width: 100%;
   height: fit-content;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  padding-bottom: 50px;
+
 }
 
-.hello {
+.join_gredent {
   background: linear-gradient(to right, #183443f2, #1834439a);
 }
 
+
 /* single banner componnent css here */
-.oneBg {
-  background-image: linear-gradient(#73b26100, #183443a5), url("../public/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero_gredent {
+  background: linear-gradient(#73b26100, #183443a5);
 }
-
-.twoBg {
-  background-image: linear-gradient(#73b26100, #183443a5), url("../public/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.threeBg {
-  background-image: linear-gradient(#73b26100, #183443a5), url("../public/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* .swiper-button-prev {
-  display: none;
-}
-
-.swiper-button-next {
-  display: none;
-} */

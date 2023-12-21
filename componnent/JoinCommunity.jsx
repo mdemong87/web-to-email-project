@@ -5,11 +5,11 @@ import joinCommunity from "../public/joinCommunity.webp";
 
 export default function () {
     return (
-        <div className={`joinCommunity relative`}>
+        <div className={`joinCommunity relative overflow-x-hidden overflow-y-hidden`}>
             <div className="w-screen absolute h-full -z-20">
-                <Image className="w-screen h-full" src={joinCommunity} alt="image-bg" objectFit="cover" layout="fill" />
+                <Image className="w-full h-full" src={joinCommunity} alt="image-bg" objectFit="cover" layout="fill" />
             </div>
-            <div className="hello absolute w-screen h-full -z-10" />
+            <div className="join_gredent absolute w-screen h-full -z-10" />
 
 
 
@@ -24,7 +24,7 @@ export default function () {
                             <Button link={"/"} text="Join Community" />
                         </div>
                     </div>
-                    <div className="bg-white shadow-xl px-12 py-6 h-fit md:h-48 rounded-xl flex flex-col md:flex-row justify-between items-center translate-y-1/2">
+                    <div className="bg-white shadow-xl px-12 py-6 mt-20 h-fit md:h-48 rounded-xl flex flex-col md:flex-row justify-between items-center">
                         <div className="text-center md:border-r-2 md:border-gray-300 h-full w-full flex items-center justify-center">
                             <div>
                                 <span className="text-5xl font-normal text-gray-700">5003k+</span>

@@ -1,3 +1,5 @@
+import heroBanner from "../public/banner.jpg";
+
 // import Swiper core and required modules
 import { A11y, Navigation } from 'swiper/modules';
 
@@ -23,13 +25,13 @@ export default function Banner() {
                 navigation
             >
                 <SwiperSlide>
-                    <SingleBanner sl="1" />
+                    <SingleBanner bg={heroBanner} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SingleBanner sl="2" />
+                    <SingleBanner bg={heroBanner} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <SingleBanner sl="3" />
+                    <SingleBanner bg={heroBanner} />
                 </SwiperSlide>
             </Swiper>
         </div>

@@ -1,10 +1,17 @@
+import Image from "next/image";
 import Button from "../componnent/Button";
 
 
-export default function SingleBanner({ sl }) {
+export default function SingleBanner({ bg }) {
     return (
-        <div className={`h-screen ${sl == "1" ? "oneBg" : sl == "2" ? "twoBg" : "threeBg"}`}>
-            <div className="flex h-screen items-center justify-center">
+        <div className={`h-screen relative`}>
+
+            <div className="w-screen absolute h-full -z-20">
+                <Image className="w-screen h-full" src={bg} alt="image-bg" objectFit="cover" layout="fill" />
+            </div>
+            <div className="hero_gredent absolute w-screen h-full -z-10" />
+
+            <div className="absolute flex h-screen items-center justify-center">
                 <div className="w-2/4">
                     <h1 className="text-white text-5xl text-center font-light">
                         Looking for a career change?<br /> Browse our job listings now!
