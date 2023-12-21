@@ -11,7 +11,7 @@ export default function SingleBanner({ bg }) {
             </div>
             <div className="hero_gredent absolute w-screen h-full -z-10" />
 
-            <div className="absolute flex h-screen items-center justify-center">
+            <div className="absolute flex h-screen w-screen items-center justify-center">
                 <div className="w-2/4">
                     <h1 className="text-white text-5xl text-center font-light">
                         Looking for a career change?<br /> Browse our job listings now!
