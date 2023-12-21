@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
-import styles from "../styles/header.module.css";
+import styles from "../styles/Header.module.css";
 
 export default function Navber() {
     const [isoepn, setisopen] = useState(false);
