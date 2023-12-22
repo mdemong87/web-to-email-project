@@ -10,7 +10,7 @@ export default function Contact() {
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
                     <div className="w-full h-fit pb-8 md:pb-0">
                         <p className="pcolor">Get in touch</p>
-                        <h1 className="text-3xl font-semibold text-gray-700 py-5">Don't hesitate to contact us for more information.</h1>
+                        <h1 className="text-3xl font-semibold text-gray-700 py-5">Do not hesitate to contact us for more information.</h1>
                         <p className="pb-9 text-lg text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         <div className="border-t-2 border-gray-300">
                             <div className="flex gap-3 items-start pt-5">
