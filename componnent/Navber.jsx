@@ -17,10 +17,10 @@ export default function Navber() {
                     <div className={styles.linkWrp}>
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/">Home</Link >
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/about">About</Link >
-                        <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/Catering">Catering Job</Link >
+                        <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/catering">Catering Job</Link >
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/housekeeping">Housekeeping Job</Link >
                         <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/contact">Contact Us</Link >
-                        <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/Register">Register</Link >
+                        <Link onClick={() => setisopen(!isoepn)} className={styles.link} href="/register">Register</Link >
                     </div>
                 </div>
                 <div className={styles.transparantDiv} />

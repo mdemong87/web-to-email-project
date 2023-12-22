@@ -7,6 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { IoLogoWhatsapp } from "react-icons/io";
 import Container from "../componnent/Container";
+import bg_footer from "../public/bg_footer.webp";
 import footer_man from "../public/footer-man.webp";
 import logo from '../public/logo.png';
 import styles from "../styles/Footer.module.css";
@@ -16,9 +17,12 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <Container>
-                <div className={`shadow-xl hidden lg:flex ${styles.footerModelWrper}`}>
-                    <div>
-                        <h1 className="text-3xl font-semibold text-gray-700">Looking for a
+                <div className={`shadow-xl hidden lg:flex ${styles.footerModelWrper} relative`}>
+                    <Image className="absolute -z-10 w-full rounded-2xl" src={bg_footer} alt="bg_footer" layout="fill" objectFit="cover" />
+                    <div className={`absolute w-full h-full ${styles.footer_gredent}`} />
+
+                    <div className="z-10">
+                        <h1 className="text-3xl font-semibold text-gray-700 z-10">Looking for a
                             career change? Browse our job listings now!</h1>
                         <p className="text-xl text-gray-400 py-5">Sociosqu eros cras magna phasellus conubia semper netus lectus lacinia mattis sed.</p>
                         <Button link='/' text="Apply Now" />

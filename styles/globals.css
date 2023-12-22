@@ -56,3 +56,11 @@ a {
 .hero_gredent {
   background: linear-gradient(#73b26100, #183443a5);
 }
+
+
+/* register page shadow */
+.shadow {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.07);
+  border: 1px solid #E1E1E1;
+  /* background-color: #FFFFFF; */
+}

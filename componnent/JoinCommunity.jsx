@@ -12,7 +12,6 @@ export default function () {
             <div className="join_gredent absolute w-screen h-full -z-10" />
 
 
-
             <div className="z-10">
                 <Container>
                     <div className="w-full md:w-2/4 flex flex-col justify-center text-center md:text-left pt-32 md:pt-20">
