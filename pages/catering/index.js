@@ -2,7 +2,7 @@ import Container from "../../componnent/Container";
 import SingleJobsCard from "../../componnent/SingleJobsCard";
 
 
-export default function () {
+export default function CateringJobs() {
     return (
         <main className="f-fit py-40 pb-52">
             <Container>
