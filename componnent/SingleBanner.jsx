@@ -19,7 +19,7 @@ export default function SingleBanner({ bg }) {
                     <p className="py-8 text-gray-300 text-center">Mus vehicula dignissim quis si lorem libero cras pulvinar orci dapibus. Sagittis quisque orci pretium donec elit platea porta integer maecenas risus lobortis.</p>
 
                     <div className="flex justify-center">
-                        <Button link={"/"} text="Discover Jobs" />
+                        <Button link={"/catering"} text="Discover Jobs" />
                     </div>
                 </div>
             </div>

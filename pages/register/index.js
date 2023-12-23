@@ -16,19 +16,59 @@ export default function Register() {
 
 
     const [title, settitle] = useState('');
+    const [fristName, setfristName] = useState('');
+    const [sureName, setsureName] = useState('');
+    const [dateOfDate, setdateOfDate] = useState('');
+    const [tubeStation, settubeStation] = useState('');
+    const [postCode, setpostCode] = useState('');
+    const [mobileNumber, setmobileNumber] = useState('');
+    const [email, setemail] = useState('');
+    const [emergancyContactName, setemergancyContactName] = useState("");
+    const [emergancyContactNumber, setemergancyContactNumber] = useState("");
+    const [nationality, setnationality] = useState("");
     const [insurance, setinsurance] = useState('');
+    const [card, setcard] = useState('');
+    const [cardNumber, setcardNumber] = useState('');
+    const [issueDate, setissueDate] = useState('');
+    const [expaireDate, setexpaireDate] = useState('');
     const [criminal, setcriminal] = useState("");
     const [department, setdepartment] = useState('');
     const [month, setmonth] = useState('');
     const [permission, setpermission] = useState('');
     const [hear, sethear] = useState('');
+    const [agree, setagree] = useState(false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //handlesubmite function here
+    async function handleSubmit() {
+        console.log(
+            {
+                title, fristName, sureName, dateOfDate, tubeStation, postCode, mobileNumber, email, emergancyContactName, emergancyContactNumber, nationality, insurance, card, cardNumber, issueDate, expaireDate, criminal, department, month, permission, hear, agree
+            }
+        );
+    }
 
 
 
     return (
         <main className="f-fit py-40 pb-52">
             <Container>
-                <div>
+                <div className="w-full">
                     <h1 className="text-3xl font-bold pcolor text-center pb-8">Register Form</h1>
 
                     <div className="bg-gray-100 rounded-xl h-fit w-full p-8">
@@ -76,7 +116,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 pl-10 relative text-md" />
+                                <input onChange={(e) => setfristName(e.target.value)} type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 pl-10 relative text-md" />
                                 <FaUser className="absolute text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -94,7 +134,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 pl-10 relative text-md" />
+                                <input onChange={(e) => setsureName(e.target.value)} type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 pl-10 relative text-md" />
                                 <FaUser className="absolute text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -112,7 +152,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="date" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md" />
+                                <input onChange={(e) => setdateOfDate(e.target.value)} type="date" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md" />
                             </div>
                         </div>
                         {/* date of brith input end here */}
@@ -130,7 +170,8 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <select className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md">
+                                <select onChange={(e) => settubeStation(e.target.value)} className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md">
+                                    <option>Select Station</option>
                                     <option>Abbey Wood</option>
                                     <option>Acton Main Line Rail Station</option>
                                     <option>Acton Town</option>
@@ -191,7 +232,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
+                                <input onChange={(e) => setpostCode(e.target.value)} type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
                                 <FaLocationDot className="absolute text-lg text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -209,7 +250,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
+                                <input onChange={(e) => setmobileNumber(e.target.value)} type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
                                 <FaMobileAlt className="absolute text-lg text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -226,7 +267,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="email" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
+                                <input onChange={(e) => setemail(e.target.value)} type="email" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
                                 <MdEmail className="absolute text-lg text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -243,7 +284,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
+                                <input onChange={(e) => setemergancyContactName(e.target.value)} type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
                                 <FaHandsHelping className="absolute text-xl text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -261,7 +302,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
+                                <input onChange={(e) => setemergancyContactNumber(e.target.value)} type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
                                 <IoCallSharp className="absolute text-xl text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -279,7 +320,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
+                                <input onChange={(e) => setnationality(e.target.value)} type="text" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
                                 <TbWorld className="absolute text-xl text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -321,7 +362,8 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <select className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md">
+                                <select onChange={(e) => setcard(e.target.value)} className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md">
+                                    <option>Select Country</option>
                                     <option>Abbey Wood</option>
                                     <option>Acton Main Line Rail Station</option>
                                     <option>Acton Town</option>
@@ -383,7 +425,7 @@ export default function Register() {
                                 </h3>
                             </div>
                             <div className="w-full flex items-center justify-between gap-2">
-                                <input type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
+                                <input onChange={(e) => setcardNumber(e.target.value)} type="number" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md pl-10 relative" />
                                 <FaIdCard className="absolute text-xl text-gray-500 ml-4" />
                             </div>
                         </div>
@@ -400,13 +442,13 @@ export default function Register() {
                                     <span className="text-gray-900">:</span>
                                 </h3>
                             </div>
-                            <div className="w-full flex items-center justify-between gap-2">
+                            <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-2">
                                 <div className={`w-full rounded-md flex justify-center items-center shadow cursor-pointer gap-2`}>
-                                    <input type="date" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md" />
+                                    <input onChange={(e) => setissueDate(e.target.value)} type="date" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md" />
                                 </div>
 
                                 <div className={`w-full rounded-md flex justify-center items-center shadow cursor-pointer gap-2`}>
-                                    <input type="date" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md" />
+                                    <input onChange={(e) => setexpaireDate(e.target.value)} type="date" className="w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer bg-gray-100 outline-1 outline-gray-300 px-3 text-md" />
                                 </div>
                             </div>
                         </div>
@@ -476,7 +518,7 @@ export default function Register() {
                                     <span className="text-gray-900">:</span>
                                 </h3>
                             </div>
-                            <div className="w-full flex items-center justify-between gap-2">
+                            <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-2">
                                 <div onClick={() => setmonth('3')} className={`w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer gap-2 ${month == "3" ? "pbg text-gray-100" : "text-gray-700"}`}>
                                     <MdOutlineCalendarMonth />
                                     <h2>3 Months</h2>
@@ -554,7 +596,7 @@ export default function Register() {
                                     <span className="text-gray-900">:</span>
                                 </h3>
                             </div>
-                            <div className="w-full flex items-center justify-between gap-2">
+                            <div className="w-full flex-col sm:flex-row flex items-center justify-between gap-2">
                                 <div onClick={() => sethear('Facebook')} className={`w-full rounded-md flex justify-center items-center py-1 shadow cursor-pointer gap-2 ${hear == "Facebook" ? "pbg text-gray-100" : "text-gray-700"}`}>
                                     <span>Facebook</span>
                                 </div>
@@ -590,7 +632,7 @@ export default function Register() {
                                 <p>understand that any misrepresenttation will invalidate my application, and if employed could lead to my dismissal.</p>
                             </div>
                             <div className="flex gap-5 items-center">
-                                <input className="w-7 h-7" type="checkbox" />
+                                <input onChange={() => setagree(!agree)} className="w-7 h-7" type="checkbox" />
                                 <span>Tick to agree <Link className="underline pcolor" href={'/'}>all the terms and conditions</Link></span>
                             </div>
                         </div>
@@ -598,7 +640,7 @@ export default function Register() {
 
                         {/* submite button start hrere */}
                         <div className="mt-10 w-full">
-                            <button className="pbg text-gray-50 py-2 w-full rounded-md text-xl cursor-pointer">Submit</button>
+                            <button onClick={() => handleSubmit()} className="pbg text-gray-50 py-2 w-full rounded-md text-xl cursor-pointer">Submit</button>
                         </div>
                         {/* submite button end hrere */}
 
