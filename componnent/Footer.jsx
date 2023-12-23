@@ -25,7 +25,7 @@ export default function Footer() {
                         <h1 className="text-3xl font-semibold text-gray-700 z-10">Looking for a
                             career change? Browse our job listings now!</h1>
                         <p className="text-xl text-gray-400 py-5">Sociosqu eros cras magna phasellus conubia semper netus lectus lacinia mattis sed.</p>
-                        <Button link='/' text="Apply Now" />
+                        <Button link='/apply' text="Apply Now" />
                     </div>
                     <div className="flex justify-end">
                         <Image className={styles.footerManimage} src={footer_man} alt="footer-man" width={600} height={600} />

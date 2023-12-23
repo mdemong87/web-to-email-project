@@ -25,7 +25,7 @@ export default function SingleJobsCard() {
                         <p>$20 - $25</p>
                     </div>
                     <div>
-                        <Button link={'/'} text="Apply Now" />
+                        <Button link={'/apply'} text="Apply Now" />
                     </div>
                 </div>
             </div>
